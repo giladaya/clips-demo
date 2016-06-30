@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Deep Voice Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div id="topBar" class="nav">
+      <div class="nav-tab selected">
+        featured
+      </div><div class="nav-tab">
+        follow
+      </div>
+    </div>
+
+    <div id="infoArea">
+      <div class="badge featured">
+        featured
+      </div>
+      <div class="username">
+        @chuckno
+      </div>
+      <div class="description">
+        #YoSchmoChallenge #ChuckN #deltaForce vote me up yo!
+      </div>
+      <div class="songName">
+        <i class="fa fa-music" aria-hidden="true"></i>
+        Delta Force Song - Jean-Claude Van Damme
+      </div>
+    </div>
+
+    <div id="sideBar">
+      <div class="btn btnAvatar">
+        <img src="images/avatar01.jpg"/>
+      </div>
+      <div class="count countLikes">
+        7.04M
+      </div>
+      <div class="btn btnLike">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+      </div>
+      <div class="count countComments">
+        278.9K
+      </div>
+      <div class="btn btnComment">
+        <i class="fa fa-commenting" aria-hidden="true"></i>
+      </div>
+      <div class="btn btnMenu">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </div>
+      <div class="btn btnSong">
+        <img src="images/album01.jpg"/>
+      </div>
+    </div>
+
+    <div id="bottomBar">
+      <div class="nav-tab home selected">
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </div>
+      <div class="nav-tab search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="nav-tab add">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
+      <div class="nav-tab notifications">
+        <i class="fa fa-bolt" aria-hidden="true"></i>
+      </div>
+      <div class="nav-tab profile">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+
+    </div>
+    <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+    <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+      <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+      <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+      <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+    </video>
+
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="js/player.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+  </html>
+  
