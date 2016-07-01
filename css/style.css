@@ -4,38 +4,67 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 body {
     font-family: sans-serif;
     color: #fff;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
-#bgvid {
-  position: fixed;
-  top: 50%;
+.view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* bottom: 0; */
+  /* right: 0; */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.videos-container {
+}
+.videos-container > .item {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* z-index: 0; */
+}
+
+.videos-container > .item.selected {
+  z-index: 1;
+}
+
+.bgvid {
+  position: absolute;
+  top: 0;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+  transform: translate(-50%, 0);
   background: url('/images/polina.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
 
 
-#topBar {
+.topBar {
   position: fixed;
   top: 10px;
   right: 0;
   left: 0;
   text-align: center;
+  z-index: 1;
+  /* width: 100%; */
 }
 
-#topBar .nav-tab {
+.topBar .nav-tab {
   display: inline-block;
   margin: 0;
   border-top: 1px solid rgba(255,255,255,0.3);
@@ -43,56 +72,59 @@ body {
   margin-top: 3px;
   width: 95px;
 }
-#topBar .nav-tab.selected {
+.topBar .nav-tab.selected {
   border-top: 4px solid #fff;
-  /* margin-top: 0; */
+  margin-top: 0;
   padding-top: 5px;
   font-weight: bold;
 }
 
-#infoArea {
-  position: fixed;
+.infoArea {
+  position: absolute;
   left: 5px;
   right: 90px;
   bottom: 60px;
   overflow: hidden;
+  z-index: 2;
 }
 
-#infoArea .badge.featured {
+.infoArea .badges .badge {
   background-color: #ff0f50;
   display: inline-block;
-  padding: 3px;
+  padding: 3px 5px;
   border-radius: 3px;
+  text-align: center;
 }
 
-#infoArea .username {
+.infoArea .username {
   font-style: italic;
   color: #d8d8d8;
   font-weight: bold;
 }
 
-#infoArea .songName {
+.infoArea .songName {
   color: #d8d8d8;
   white-space: nowrap;
 }
 
-#infoArea .description {
+.infoArea .description {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-#infoArea > div {
+.infoArea > div {
   margin-bottom: 7px;
 }
 
-#sideBar {
-  position: fixed;
+.sideBar {
+  position: absolute;
   bottom: 61px;
   right: 0;
   width: 65px;
   text-align: center;
+  z-index: 2;
 }
-#sideBar .btn {
+.sideBar .btn {
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -101,59 +133,60 @@ body {
   background: rgba(0,0,0,0.2);
   overflow: hidden;
   margin: 0 0 10px;
-  /* padding: 0; */
   display: inline-block;
   font-size: 1.4em;
 }
 
-#sideBar .btn img {
+.sideBar .btn img {
   width: 100%;
   height: 100%;
 }
-#sideBar .count {
+.sideBar .btnLike.liked {
+  color: red;
+}
+.sideBar .count {
     text-align: center;
     width: 100%;
     margin-bottom: 5px;
+    font-weight: bold;
 }
-#sideBar .btn.btnMenu {
+.sideBar .btn.btnMenu {
     background: none;
     margin: -10px 0 0;
 }
 
-#bottomBar {
-  position: fixed;
+.bottomBar {
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   border-top: 1px solid rgba(255,255,255,0.3);
   padding: 3px 0 0;
   font-size: 1.2em;
-  /* height: 56px; */
-  /* line-height: 56px; */
+  z-index: 10;
 }
 
-#bottomBar .nav-tab {
+.bottomBar .nav-tab {
   width: calc(20% - 5px);
-  height: 50px;
+  height: 53px;
   line-height: 50px;
   display: inline-block;
   text-align: center;
-  /* margin: 3px 0; */
-  /* padding: 3px 0; */
-  /* border-bottom: 3px solid transparent; */
+  /* padding-bottom: 3px; */
 }
 
-#bottomBar .nav-tab.selected {
+.bottomBar .nav-tab.selected {
   border-bottom: 3px solid #fff;
-  /* margin-bottom: 0px; */
-  /* margin-top: 3px; */
 }
 
-#bottomBar .nav-tab.add .add-inner {
+.bottomBar .nav-tab.add .add-inner {
     background-color: #ffdc14;
     border-radius: 50%;
     width: 50px;
     color: #000;
-    padding: 3px 0 0;
+    /* padding: 3px 0 0; */
     display: inline-block;
+    /* margin-bottom: 3px; */
+    line-height: 50px;
+    height: 50px;
 }
