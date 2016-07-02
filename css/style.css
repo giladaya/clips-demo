@@ -32,6 +32,7 @@ body {
   height: 100vh;
   position: relative;
   /* z-index: 0; */
+  overflow: hidden;
 }
 
 .videos-container > .item.selected {
@@ -48,7 +49,7 @@ body {
   height: auto;
   z-index: 0;
   transform: translate(-50%, 0);
-  background: url('/images/polina.jpg') no-repeat;
+  background: url('/images/Video_game_controller_icon_designed_by_Maico_Amorim.svg.png') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
