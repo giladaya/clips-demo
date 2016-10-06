@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="manifest" href="manifest.json">
     
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
 
@@ -68,7 +68,7 @@
             <%= description %>
           </div>
           <div class="songName">
-            <i class="fa fa-music" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
             <%= song.name %> - <%= song.artist %>
           </div>
         </div>
@@ -107,6 +107,7 @@
             <source src="<%= video.mp4 %>" type="video/mp4">
           <% } %>
         </video>
+        <div class="bgimg" style="background-image: url(<%= video.poster %>)"></div>
       </div>
     </script>
 
@@ -119,6 +120,7 @@
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
     <!-- <script src="https://rawgit.com/peachananr/onepage-scroll/master/jquery.onepage-scroll.js"></script> -->
     <script src="https://rawgit.com/lukehaas/Scrollify/master/jquery.scrollify.js"></script>
+    <!-- <script src="js/scrollify.js"></script> -->
 
     <script src="js/index.js"></script>
   </body>

@@ -33,6 +33,7 @@ body {
   position: relative;
   /* z-index: 0; */
   overflow: hidden;
+  background: #000;
 }
 
 .videos-container > .item.selected {
@@ -41,17 +42,34 @@ body {
 
 .bgvid {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+  /* min-width: 100%; */
+  /* min-height: 100%; */
   width: auto;
   height: auto;
-  z-index: 0;
-  transform: translate(-50%, 0);
+  z-index: 1;
+  transform: translate(-50%, -50%);
   background: url('/images/Video_game_controller_icon_designed_by_Maico_Amorim.svg.png') no-repeat;
   background-size: cover;
   transition: 1s opacity;
+  max-width: 100%;
+}
+
+.bgimg {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(141deg, #ff0f50 0%, #ffd815 100%);
+  -webkit-filter: blur(10px) saturate(70%) brightness(70%);
+  z-index: 0;
+  /* background-color: #000; */
+  /* width: 83%; */
+  /* height: 209%; */
 }
 
 
