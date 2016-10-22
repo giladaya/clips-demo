@@ -22,7 +22,7 @@ body {
   /* right: 0; */
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .videos-container {
@@ -105,6 +105,10 @@ body {
   bottom: 60px;
   overflow: hidden;
   z-index: 2;
+  transition: opacity 0.5s;
+}
+.infoArea:hover {
+  opacity: 0.2;
 }
 
 .infoArea .badges .badge {
