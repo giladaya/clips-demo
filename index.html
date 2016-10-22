@@ -99,7 +99,7 @@
 
         
         <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
-        <video _autoplay poster="<%= video.poster %>" class="bgvid" loop muted webkit-playsinline playsinline>
+        <video poster="<%= video.poster %>" class="bgvid" loop _autoplay _muted webkit-playsinline playsinline>
           <% if ('webm' in video) {%>
             <source src="<%= video.webm %>" type="video/webm">
           <% } %>
