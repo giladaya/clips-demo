@@ -1,0 +1,123 @@
+[
+  {
+    "user": {
+      "name": "urim",
+      "avatar": "images/avatar_uri.png"
+    },
+    "video": {
+      "poster": "//d1playscdntv-a.akamaihd.net/video/GMgS2ujWbJE/processed/360.jpg",
+      "mp4": "http://d1playscdntv-a.akamaihd.net/video/GMgS2ujWbJE/processed/720.mp4"
+    },
+    "likesCount": 423432,
+    "isLiked": true,
+    "commentsCount": 3542341,
+    "badges": ["picked"],
+    "description": "Blitzcrank does the fatal mistake of pulling amumu",
+    "song": {
+      "name": "League of Legend",
+      "artist": "Riot",
+      "art": "images/game_lol.png"
+    }
+  },
+  {
+    "user": {
+      "name": "quinnmeister",
+      "avatar": "http://s0.playscdn.tv/img/avatars/large/33964324275940933aed9897bae676f4.989afa18f5a6c26ab845b78a3363ede1.jpeg"
+    },
+    "video": {
+      "poster": "//d1playscdntv-a.akamaihd.net/video/AvacFgCLiKk/processed/360.jpg",
+      "mp4": "//d1playscdntv-a.akamaihd.net/video/AvacFgCLiKk/processed/720.mp4"
+    },
+    "likesCount": 3242321,
+    "isLiked": true,
+    "commentsCount": 675645,
+    "badges": ["hot", "trending"],
+    "description": "Combo-Orianna, Braum, Lee Sin and Jinx ultimate",
+    "song": {
+      "name": "League of Legend",
+      "artist": "Riot",
+      "art": "images/game_lol.png"
+    }
+  },
+  {
+    "user": {
+      "name": "kaleeeb",
+      "avatar": "http://s0.playscdn.tv/img/avatars/large/d6aecc71b0001d8b01b931708ee3dfc1.0b58abe70a10e4bd9543538c91656660.jpeg"
+    },
+    "video": {
+      "poster": "//d1playscdntv-a.akamaihd.net/video/AvuOgijP8LM/processed/360.jpg",
+      "mp4": "//d1playscdntv-a.akamaihd.net/video/AvuOgijP8LM/processed/720.mp4"
+    },
+    "likesCount": 789756,
+    "isLiked": true,
+    "commentsCount": 65754,
+    "badges": ["award"],
+    "description": "Mad Zed skills",
+    "song": {
+      "name": "League of Legend",
+      "artist": "Riot",
+      "art": "images/game_lol.png"
+    }
+  },
+  {
+    "user": {
+      "name": "chuckno",
+      "avatar": "images/chuck.jpg"
+    },
+    "video": {
+      "poster": "//d1playscdntv-a.akamaihd.net/video/AvwBDxPbgiU/processed/360.jpg",
+      "mp4": "//d1playscdntv-a.akamaihd.net/video/AvwBDxPbgiU/processed/720.mp4"
+    },
+    "likesCount": 7040123,
+    "isLiked": true,
+    "commentsCount": 278900,
+    "badges": ["featured"],
+    "description": "Yasuo ults Rengar in mid-jump outplay",
+    "song": {
+      "name": "League of Legend",
+      "artist": "Riot",
+      "art": "images/game_lol.png"
+    }
+  },
+  {
+    "user": {
+      "name": "jeanc",
+      "avatar": "images/jean.jpg"
+    },
+    "video": {
+      "poster": "//d0playscdntv-a.akamaihd.net/video/Avu_sPGBMbA/processed/360.jpg",
+      "mp4": "//d0playscdntv-a.akamaihd.net/video/Avu_sPGBMbA/processed/720.mp4"
+    },
+    "likesCount": 1040123,
+    "isLiked": false,
+    "commentsCount": 78900,
+    "badges": ["hot"],
+    "description": "Baron steal in NACS",
+    "song": {
+      "name": "League of Legend",
+      "artist": "Riot",
+      "art": "images/game_lol.png"
+    }
+  },
+  {
+    "user": {
+      "name": "stevens",
+      "avatar": "images/steven.jpg"
+    },
+    "video": {
+      "poster": "//d0playscdntv-a.akamaihd.net/video/Avuzp3lVcPA/processed/360.jpg",
+      "mp4": "//d0playscdntv-a.akamaihd.net/video/Avuzp3lVcPA/processed/720.mp4"
+    },
+    "likesCount": 1234567,
+    "isLiked": false,
+    "commentsCount": 23456,
+    "badges": ["hot", "trending"],
+    "description": "The monkey power rangers! (TURN DOWN AUDIO TS IS LOUD) #Overwatch #protatomonster #troll #competetive",
+    "song": {
+      "name": "Overwatch",
+      "artist": "BLIZZARD",
+      "art": "images/game_overwatch.png"
+    }
+  }
+
+]
